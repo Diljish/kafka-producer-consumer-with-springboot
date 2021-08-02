@@ -1,9 +1,0 @@
-package com.course.kafkaconsumer.consumer;
-
-@Service
-public class FoodOrderConsumer {
-	
-	
-	
-
-}

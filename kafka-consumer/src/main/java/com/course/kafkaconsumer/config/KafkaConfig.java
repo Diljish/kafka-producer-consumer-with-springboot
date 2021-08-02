@@ -111,6 +111,7 @@ public class KafkaConfig {
 		
 		var errorHandler = new SeekToCurrentErrorHandler(recover,5);
 		factory.setErrorHandler(errorHandler);
+		return factory;
 	}
 	
 

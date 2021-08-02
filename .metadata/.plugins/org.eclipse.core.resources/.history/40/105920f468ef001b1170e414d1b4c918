@@ -1,5 +1,0 @@
-package com.course.kafkaconsumer.consumer;
-
-public class CustomLocalDateSerializer {
-
-}

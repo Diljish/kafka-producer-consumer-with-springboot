@@ -1,5 +1,0 @@
-package com.course.kafkaproducer.producer.scheduler;
-
-public class CarLocationScheduler {
-
-}
