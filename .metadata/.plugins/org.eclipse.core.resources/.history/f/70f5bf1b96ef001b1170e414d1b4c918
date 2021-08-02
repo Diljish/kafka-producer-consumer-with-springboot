@@ -1,0 +1,12 @@
+package com.course.kafkaproducer.entity;
+
+public class Commodity {
+	
+	private String name;
+	private double price;
+	private String measurement;
+	private long timestamp;
+	
+	
+
+}

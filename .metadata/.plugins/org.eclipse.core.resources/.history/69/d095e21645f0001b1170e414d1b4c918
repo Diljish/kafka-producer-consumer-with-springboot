@@ -1,0 +1,12 @@
+package com.course.kafkaproducer.config;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class KafkaConfig {
+	
+	
+	
+	
+
+}

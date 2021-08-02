@@ -1,0 +1,9 @@
+package com.course.kafkaconsumer.consumer;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class CommodityDashboardConsumer {
+	
+
+}

@@ -1,0 +1,19 @@
+package com.course.kafkaconsumer.error.handler;
+
+import org.apache.kafka.clients.consumer.Consumer;
+import org.springframework.kafka.listener.ConsumerAwareListenerErrorHandler;
+import org.springframework.kafka.listener.ListenerExecutionFailedException;
+import org.springframework.messaging.Message;
+
+public class FoodOrderErrorHandler implements ConsumerAwareListenerErrorHandler {
+
+	@Override
+	public Object handleError(Message<?> message, ListenerExecutionFailedException exception, Consumer<?, ?> consumer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+
+}

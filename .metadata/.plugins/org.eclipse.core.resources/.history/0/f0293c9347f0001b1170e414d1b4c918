@@ -1,0 +1,16 @@
+package com.course.kafkaconsumer.config;
+
+public class KafkaConfig {
+	@Autowired
+	private KafkaProperties kafkaProperties;
+
+	@Bean
+	public ConsumerFactory<Object, Object> consumerFactory() {
+		var properties = kafkaProperties.buildConsumerProperties();
+
+		properties.put(ConsumerConfig.METADATA_MAX_AGE_CONFIG, "120000");
+
+		return new DefaultKafkaConsumerFactory<Object, Object>(properties);
+	}
+
+}

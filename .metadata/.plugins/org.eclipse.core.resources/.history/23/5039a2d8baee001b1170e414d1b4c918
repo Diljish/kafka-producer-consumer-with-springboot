@@ -1,0 +1,10 @@
+package com.course.kafkaproducer.producer;
+
+import org.springframework.kafka.core.KafkaTemplate;
+
+public class FixedRateProducer {
+	
+	private KafkaTemplate<String, String> kafkaTemplate;
+	
+
+}

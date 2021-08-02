@@ -1,0 +1,22 @@
+package com.course.kafkaproducer.producer.scheduler;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+import com.course.kafkaproducer.entity.CarLocation;
+
+
+@Service
+public class CarLocationScheduler {
+	
+	private static final Logger logger = LoggerFactory.getLogger(CarLocationScheduler.class);
+	
+	private CarLocation carOne;
+	private CarLocation carTwo;
+	private CarLocation carThree;
+	
+	
+	
+
+}

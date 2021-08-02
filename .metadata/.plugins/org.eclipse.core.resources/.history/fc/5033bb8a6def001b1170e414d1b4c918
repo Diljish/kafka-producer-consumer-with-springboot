@@ -1,0 +1,31 @@
+package com.course.kafkaconsumer.consumer;
+
+import java.io.IOException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
+
+import com.fasterxml.*;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import entity.Employee;
+
+@Service
+public class EmployeeJsonConsumer {
+	
+	private ObjectMapper objectMapper = new ObjectMapper();
+	private static final Logger logger = LoggerFactory.getLogger(EmployeeJsonConsumer.class);
+	
+	@KafkaListener(topics ="t_employee")
+	public void consume(String message) throws JsonParseException, JsonMappingException, IOException {
+		
+		var employee = objectMapper.readValue(message, Employee.class);
+		logger.info("Employye : {}" +employee);
+		
+	}
+	
+
+}

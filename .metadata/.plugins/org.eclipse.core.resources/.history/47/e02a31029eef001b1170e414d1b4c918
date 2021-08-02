@@ -1,0 +1,15 @@
+package com.course.kafkaproducer.service;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+import com.course.kafkaproducer.entity.Commodity;
+
+@Service
+public class CommodityService {
+	
+	private static final Map<String, Commodity> COMMODITY_BASE = new HashMap<>();
+
+}

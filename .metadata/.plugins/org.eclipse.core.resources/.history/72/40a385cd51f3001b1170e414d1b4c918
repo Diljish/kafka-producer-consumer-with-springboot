@@ -1,0 +1,5 @@
+package com.course.kafkaconsumer.error.handler;
+
+public class GlobalErrorHandler {
+
+}
